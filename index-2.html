@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Melkamu Gizat Agriculture — practical farming guides, livestock care, poultry, and useful agricultural resources.">
+<title>Melkamu Gizat Agriculture</title>
+<style>
+:root{--green:#176b3a;--green2:#21864b;--cream:#f5f8f1;--ink:#17231b;--muted:#5d6b61;--gold:#f2c14e}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+header{background:linear-gradient(135deg,#104b2b,#21864b);color:#fff;padding:22px 18px 54px}
+nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.2rem;letter-spacing:.2px}.navright{display:flex;gap:10px;align-items:center}
+button,.btn{border:0;border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.lang{background:#fff;color:var(--green)}.hero{max-width:1080px;margin:42px auto 0;display:grid;grid-template-columns:1.4fr .9fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:0 0 15px}.hero p{font-size:1.08rem;max-width:650px;color:#e7f4e9}
+.btn{background:var(--gold);color:#20301f;margin-top:10px}.hero-card{background:#ffffff18;border:1px solid #ffffff40;border-radius:18px;padding:22px}
+.hero-card .emoji{font-size:3rem}.hero-card h3{margin:4px 0}
+main{max-width:1080px;margin:auto;padding:34px 18px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h2{font-size:1.8rem;margin:0 0 8px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.card{border:1px solid #e0e8df;border-radius:15px;padding:20px;background:#fff;box-shadow:0 5px 18px #193a1c0a}
+.card .emoji{font-size:2rem}.card h3{margin:8px 0}.card p{color:var(--muted)}.card a{color:var(--green);font-weight:700;text-decoration:none}
+.notice{background:var(--cream);border-left:4px solid var(--green2);padding:16px;border-radius:8px;margin-top:26px}
+form{display:grid;gap:12px;max-width:620px;margin-top:16px}input,textarea{font:inherit;padding:12px;border:1px solid #ccd8cc;border-radius:8px;width:100%}
+footer{background:#102d1b;color:#e5f0e7;padding:25px 18px;text-align:center}footer a{color:#f2c14e}
+@media(max-width:700px){.hero{grid-template-columns:1fr;margin-top:28px}.grid{grid-template-columns:1fr}.hero-card{max-width:none}.hero h1{font-size:2.35rem}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">🌱 Melkamu Gizat Agriculture</div>
+    <div class="navright"><button class="lang" id="langBtn" type="button">አማርኛ</button></div>
+  </nav>
+  <section class="hero">
+    <div>
+      <h1 id="heroTitle">Practical knowledge for better farming</h1>
+      <p id="heroText">Explore helpful guides on crops, poultry, livestock, and farm business ideas. Learn, grow, and discover useful agricultural products.</p>
+      <a class="btn" href="#guides" id="heroBtn">Explore farming guides</a>
+    </div>
+    <div class="hero-card">
+      <div class="emoji">🌾 🐔 🐄</div>
+      <h3 id="cardTitle">Grow your knowledge</h3>
+      <p id="cardText">Simple, useful agriculture information for farmers, students, and anyone interested in farming.</p>
+    </div>
+  </section>
+</header>
+<main>
+  <section id="guides">
+    <div class="section-head">
+      <div><h2 id="guideTitle">Explore our topics</h2><p class="muted" id="guideSub">Start with a topic that matters to your farm.</p></div>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="emoji">🐔</div><h3 id="poultryTitle">Poultry & chicken production</h3><p id="poultryText">Basics of chicken housing, feeding, hygiene, and small poultry businesses.</p><a href="#contact" id="poultryLink">Ask for resources →</a></article>
+      <article class="card"><div class="emoji">🐄</div><h3 id="livestockTitle">Livestock & animal care</h3><p id="livestockText">Explore animal nutrition, forage, and everyday livestock management.</p><a href="#contact" id="livestockLink">Ask for resources →</a></article>
+      <article class="card"><div class="emoji">🌱</div><h3 id="cropsTitle">Crops & farm business</h3><p id="cropsText">Practical crop tips, planning ideas, and ways to build a farm business.</p><a href="#contact" id="cropsLink">Ask for resources →</a></article>
+    </div>
+  </section>
+  <section style="margin-top:34px">
+    <h2 id="resourcesTitle">Recommended farming resources</h2>
+    <p class="muted" id="resourcesText">Add your trusted affiliate product links here—such as farming books, tools, seeds, or training resources—after joining an affiliate program.</p>
+    <div class="notice"><strong id="affiliateTitle">Affiliate disclosure</strong><br><span id="affiliateText">Some links on this website may be affiliate links. If you buy through them, the site owner may earn a commission at no extra cost to you. Only recommend products you trust.</span></div>
+  </section>
+  <section id="contact" style="margin-top:34px">
+    <h2 id="contactTitle">Contact</h2>
+    <p class="muted" id="contactText">Want to suggest a topic or ask about agricultural resources? Send an email.</p>
+    <a class="btn" href="mailto:melikamugizat@gmail.com" id="emailBtn">Email Melkamu</a>
+    <p class="muted" style="font-size:.9rem" id="emailNote">Contact Melkamu at melikamugizat@gmail.com.</p>
+  </section>
+</main>
+<footer><div>© <span id="year"></span> Melkamu Gizat Agriculture</div><div id="footerText">Growing knowledge, supporting farmers.</div></footer>
+<script>
+const copy={
+en:{lang:"አማርኛ",heroTitle:"Practical knowledge for better farming",heroText:"Explore helpful guides on crops, poultry, livestock, and farm business ideas. Learn, grow, and discover useful agricultural products.",heroBtn:"Explore farming guides",cardTitle:"Grow your knowledge",cardText:"Simple, useful agriculture information for farmers, students, and anyone interested in farming.",guideTitle:"Explore our topics",guideSub:"Start with a topic that matters to your farm.",poultryTitle:"Poultry & chicken production",poultryText:"Basics of chicken housing, feeding, hygiene, and small poultry businesses.",livestockTitle:"Livestock & animal care",livestockText:"Explore animal nutrition, forage, and everyday livestock management.",cropsTitle:"Crops & farm business",cropsText:"Practical crop tips, planning ideas, and ways to build a farm business.",link:"Ask for resources →",resourcesTitle:"Recommended farming resources",resourcesText:"Add your trusted affiliate product links here—such as farming books, tools, seeds, or training resources—after joining an affiliate program.",affiliateTitle:"Affiliate disclosure",affiliateText:"Some links on this website may be affiliate links. If you buy through them, the site owner may earn a commission at no extra cost to you. Only recommend products you trust.",contactTitle:"Contact",contactText:"Want to suggest a topic or ask about agricultural resources? Send an email.",emailBtn:"Email Melkamu",emailNote:"Contact Melkamu at melikamugizat@gmail.com.",footerText:"Growing knowledge, supporting farmers."},
+am:{lang:"English",heroTitle:"ለተሻለ ግብርና ተግባራዊ እውቀት",heroText:"ስለ ሰብሎች፣ የዶሮ እርባታ፣ የእንስሳት እንክብካቤ እና የግብርና ንግድ ጠቃሚ መረጃዎችን ያግኙ።",heroBtn:"የግብርና መመሪያዎችን ይመልከቱ",cardTitle:"እውቀትዎን ያሳድጉ",cardText:"ለአርሶ አደሮች፣ ለተማሪዎች እና ለግብርና ፍላጎት ላላቸው ቀላልና ጠቃሚ መረጃ።",guideTitle:"ርዕሶቻችንን ይመልከቱ",guideSub:"ለእርሻዎ ጠቃሚ ከሆነ ርዕስ ይጀምሩ።",poultryTitle:"የዶሮ እርባታ",poultryText:"ስለ ዶሮ መኖሪያ፣ መኖ፣ ንጽህና እና አነስተኛ የዶሮ ንግድ መሠረታዊ መረጃ።",livestockTitle:"የእንስሳት እንክብካቤ",livestockText:"ስለ እንስሳት ምግብ፣ መኖ እና ዕለታዊ አያያዝ ይማሩ።",cropsTitle:"ሰብሎችና የእርሻ ንግድ",cropsText:"ተግባራዊ የሰብል ምክሮች፣ የእቅድ ሐሳቦች እና የእርሻ ንግድ መመሪያዎች።",link:"መረጃ ይጠይቁ →",resourcesTitle:"የግብርና ምንጮች",resourcesText:"የአፊሊየት ፕሮግራም ከተቀላቀሉ በኋላ የሚያምኑባቸውን የግብርና መጻሕፍት፣ መሣሪያዎች፣ ዘሮች ወይም ስልጠናዎች ሊንኮች ያክሉ።",affiliateTitle:"ስለ ኮሚሽን ማስታወቂያ",affiliateText:"በዚህ ድረ-ገጽ ላይ የአፊሊየት ሊንኮች ሊኖሩ ይችላሉ። በእነዚህ ሊንኮች ግዢ ከተፈጸመ የድረ-ገጹ ባለቤት ተጨማሪ ወጪ ሳይጨምር ኮሚሽን ሊያገኝ ይችላል።",contactTitle:"ያግኙን",contactText:"ርዕስ ለመጠቆም ወይም ስለ ግብርና መረጃ ለመጠየቅ ኢሜይል ይላኩ።",emailBtn:"ለመልካሙ ኢሜይል ይላኩ",emailNote:"ለመልካሙ በ melikamugizat@gmail.com ያግኙ።",footerText:"እውቀትን ማሳደግ፣ አርሶ አደሮችን መደገፍ።"}
+};
+let language="en";
+document.getElementById("langBtn").addEventListener("click",()=>{language=language==="en"?"am":"en";const d=copy[language];Object.keys(d).forEach(k=>{const el=document.getElementById(k);if(el)el.textContent=d[k]});document.documentElement.lang=language;document.getElementById("langBtn").textContent=d.lang;["poultryLink","livestockLink","cropsLink"].forEach(id=>document.getElementById(id).textContent=d.link)});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
